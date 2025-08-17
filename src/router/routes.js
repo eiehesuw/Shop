@@ -2,7 +2,8 @@ import Catalog from "../pages/Catalog/Catalog";
 import Basket from "../pages/Basket/Basket";
 
 export const routes = [
-    {path: '/', element: <Catalog />, exact: true},
-    { path: '/:productId/', element: <Catalog />, exact: true},
-    { path: '/basket/', element: <Basket />, exact: true},
+    {path: '/', element: <Catalog />},
+    { path: '/:sectionCode/', element: <Catalog />},
+    { path: '/:sectionCode/:productId/', element: <Catalog />},
+    { path: '/basket/', element: <Basket />},
 ]

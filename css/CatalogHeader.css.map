@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/components/Catalog/CatalogHeader/CatalogHeader.scss","CatalogHeader.css"],"names":[],"mappings":"AAAA;EACI,mBAAA;ACCJ;ADCI;EACI,aAAA;ACCR;ADCQ;EACI,eAAA;EACA,iBAAA;EACA,eAAA;EACA,gBAAA;EACA,oCAAA;EACA,4BAAA;ACCZ;ADCY;EACI,iCAAA;ACChB","file":"CatalogHeader.css"}

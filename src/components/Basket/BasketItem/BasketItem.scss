@@ -1,0 +1,64 @@
+.basket-item {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    gap: 20px;
+
+    &:not(:last-child) {
+        border-bottom: none;
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+
+        &-name {
+            font-size: 16px;
+            font-weight: 500;
+            width: 100%;
+        }
+
+        &-color {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        &-separator {
+            font-size: 14px;
+            color: var(--grey-color);
+            margin: 0 5px;
+        }
+
+        &-size {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--grey-color);
+            text-transform: uppercase;
+        }
+    }
+
+    &__action {
+        margin-left: auto;
+        align-items: end;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        &-price {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 0 10px 0;
+        }
+    }
+}

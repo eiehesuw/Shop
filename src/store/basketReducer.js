@@ -1,19 +1,17 @@
 const defaultState = {
-    products: [],
+    basketProducts: [],
 }
 
-const SET_PRODUCTS = "SET_PRODUCTS"
+const SET_BASKET_PRODUCTS = "SET_BASKET_PRODUCTS"
 
 export const basketReducer = (state = defaultState, action) => {
     switch (action.type) {
-        case SET_PRODUCTS:
-            console.log(action.payload);
-
-            return { ...state, products: action.payload }
+        case SET_BASKET_PRODUCTS:
+            return { ...state, basketProducts: action.payload }
 
         default:
             return state
     }
 }
 
-export const setProductsAction = (payload) => ({ type: SET_PRODUCTS, payload })
+export const setBasketProductsAction = (payload) => ({ type: SET_BASKET_PRODUCTS, payload })

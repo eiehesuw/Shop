@@ -9,6 +9,7 @@ const sizes = [
 const products = [
     {
         id: 1,
+        sectionCode: 'tshirts',
         name: 'Футболка',
         colors: [
             {
@@ -32,7 +33,7 @@ const products = [
             {
                 id: 3,
                 name: 'хаки',
-                color: '#78866B', // army green / khaki
+                color: '#78866B',
                 images: ['/images/1/haki_front.webp', '/images/1/haki_back.webp'],
                 price: '120.00',
                 description: 'Описание для "Футболка хаки"',
@@ -43,12 +44,13 @@ const products = [
 
     {
         id: 2,
+        sectionCode: 'tshirts',
         name: 'Футолка',
         colors: [
             {
                 id: 1,
                 name: 'синий',
-                color: '#0000FF',
+                color: '#232387',
                 images: ['/images/2/blue_front.webp', '/images/2/blue_back.webp'],
                 price: '88.00',
                 description: 'Описание для "Футолка синий"',
@@ -68,6 +70,7 @@ const products = [
 
     {
         id: 3,
+        sectionCode: 'shorts',
         name: 'Шорты',
         colors: [
             {
@@ -82,7 +85,7 @@ const products = [
             {
                 id: 3,
                 name: 'бежевый',
-                color: '#F5F5DC',
+                color: '#e8dbc9ff',
                 images: ['/images/3/beige_front.webp', '/images/3/beige_back.webp'],
                 price: '100.00',
                 description: 'Описание для "Шорты бежевый"',
@@ -90,8 +93,7 @@ const products = [
             },
         ],
     },
-]
-
+];
 
 function getSizes() {
     return new Promise((resolve) => {

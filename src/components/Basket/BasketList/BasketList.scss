@@ -1,0 +1,9 @@
+.basket-list {
+    display: flex;
+    flex-direction: column;
+
+    &__empty {
+        font-size: 32px;
+        line-height: 200%;
+    }
+}

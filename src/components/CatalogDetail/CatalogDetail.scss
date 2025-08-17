@@ -1,0 +1,112 @@
+.catalog-detail {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    gap: 20px;
+    padding-right: 50px;
+    height: 100%;
+    max-width: 790px;
+    max-height: 60vh;
+    min-height: 60vh;
+    overflow-y: auto;
+    scrtollbar-width: 0;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        max-width: 440px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__right {
+        min-width: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-name {
+            font-size: 24px;
+            line-height: 120%;
+            font-weight: 500;
+            margin: 0 0 20px 0;
+        }
+
+        &-colors {
+            display: flex;
+            gap: 10px;
+        }
+
+        &-color {
+            cursor: pointer;
+            position: relative;
+            padding-left: 20px;
+
+            &--circle {
+                position: absolute;
+                display: block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                top: 0;
+                left: 0;
+                border: 1px solid var(--border-color);
+            }
+        }
+
+        &-sizes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        &-size {
+            min-width: 32px;
+            padding: 4px 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+
+            &--active {
+                border: 1px solid var(--accent-color);
+            }
+        }
+
+        &-price {
+            font-size: 24px;
+            line-height: 120%;
+            font-weight: 600;
+            margin-top: auto;
+        }
+
+        &-button {
+            display: block;
+            background-color: var(--accent-color);
+            padding: 12px 10px;
+            color: var(--light-color);
+            width: 140px;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            &:hover {
+
+            }
+        }
+    }
+
+    &__description {
+        width: 100%;
+
+        &-text {
+            margin: 0;
+            font-size: 20px;
+            line-height: 120%;
+        }
+    }
+}

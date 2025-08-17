@@ -1,0 +1,33 @@
+.header {
+    padding: 50px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__navigation {
+        margin-left: auto;
+        font-size: 20px;
+        font-weight: 500;
+
+        &-item {
+            position: relative;
+            display: inline-block;
+        }
+
+        &-count {
+            position: absolute;
+            background: var(--accent-color);
+            color: var(--light-color);
+            font-size: 12px;
+            height: 18px;
+            width: 18px;
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+            align-items: center;
+            border-radius: 50%;
+            top: -2px;
+            right: -18px;
+        }
+    }
+}

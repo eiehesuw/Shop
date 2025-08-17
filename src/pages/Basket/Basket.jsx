@@ -1,24 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import "./Basket.scss";
+import BasketList from '../../components/Basket/BasketList/BasketList';
 
 const Basket = () => {
-    const dispatch = useDispatch();
-    const products = useSelector((state) => state.basket.products);
-    const [loading, setLoading] = useState(true);
-
     return (
-        <div className="catalog-detail">
-            <h1>Basket</h1>
-            {
-                !loading ?
-                    <>
-
-                    </>
-                    :
-                    <h2>Loading...</h2>
-            }
-
+        <div className="basket">
+            <div className="app-container">
+                <h1>Корзина</h1>
+                <BasketList />
+            </div>
         </div>
     );
 };
